@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Update Book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📖 Update Book</h1>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="addBook.html">➕ Add Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <form id="updateBookForm" class="book-form" enctype="multipart/form-data">
+        <label>Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label>Author:</label>
+        <input type="text" id="author" name="author" required>
+
+        <label>Year:</label>
+        <input type="number" id="year" name="year" required>
+
+        <label>Price (₹):</label>
+        <input type="number" id="price" name="price" required>
+
+        <label>Book Image:</label>
+        <img id="previewImage" src="" width="150" style="border-radius:8px;"><br>
+        <input type="file" id="image" name="image" accept="image/*">
+
+        <button type="submit" class="btn">Update Book</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Book Manager | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
